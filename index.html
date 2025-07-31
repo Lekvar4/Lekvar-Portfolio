@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lekvar - Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Lekvar</span></h1>
+      <p>I build clean, modern, and powerful websites that get results.</p>
+      <a href="mailto:ajiboyelateef940@gmail.com" class="btn">Contact Me</a>
+    </div>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I'm a self-taught front-end web developer with a passion for clean code, minimal design, and helping brands stand out online.</p>
+    <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=800&q=80" alt="Lekvar Working">
+  </section>
+
+  <section class="services">
+    <h2>What I Do</h2>
+    <div class="service-grid">
+      <div class="service">
+        <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" alt="Design">
+        <h3>Website Design</h3>
+        <p>Pixel-perfect layouts built for conversion and clarity.</p>
+      </div>
+      <div class="service">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png" alt="Responsive">
+        <h3>Mobile Friendly</h3>
+        <p>Fully responsive builds that work on any device or screen size.</p>
+      </div>
+      <div class="service">
+        <img src="https://cdn-icons-png.flaticon.com/512/2674/2674060.png" alt="Support">
+        <h3>Fast & Smooth</h3>
+        <p>Optimized websites with clean structure and smooth animations.</p>
+      </div>
+    </div>
+  </section>
+
+<section class="testimonials">
+  <h2>What Clients Say</h2>
+  <div class="testimonial-container">
+    
+    <div class="testimonial fade-in">
+      <div class="stars">★★★★★</div>
+      <p>"Working with Lekvar was seamless and professional. He delivered exactly what I needed, ahead of time."</p>
+      <h4>— Amanda J., UK</h4>
+    </div>
+
+    <div class="testimonial fade-in delay-1">
+      <div class="stars">★★★★★</div>
+      <p>"Super impressed with the clean design and mobile responsiveness. Will definitely hire again!"</p>
+      <h4>— Tunde M., Nigeria</h4>
+    </div>
+
+    <div class="testimonial fade-in delay-2">
+      <div class="stars">★★★★★</div>
+      <p>"Best experience I’ve had working with a developer online. Communication and quality were top-notch."</p>
+      <h4>— Carlos R., Spain</h4>
+    </div>
+
+  </div>
+</section>
+
+ <footer>
+  <p>&copy; 2025 Lekvar | All Rights Reserved</p>
+  <div class="socials">
+    <a href="https://www.instagram.com/lekvardev?igsh=MXVtZmF2eGh4MnJlaw%3D%3D&utm_source=qr" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111421.png" alt="Instagram" />
+    </a>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener("scroll", function () {
+    document.querySelectorAll(".fade-in").forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        el.classList.add("visible");
+      }
+    });
+  });
+</script>
+</body>
+</html>
